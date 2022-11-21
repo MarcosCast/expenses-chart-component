@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.corpo {
+    background-color: #000;
+    display: flex;
+    padding: 15px;
+}
+
+.interface {
+    background-color: #87cefa;
+    width: 350px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.atribuicao {
+    align-items: flex-end;
+
+}
