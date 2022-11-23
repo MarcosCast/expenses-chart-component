@@ -1,0 +1,30 @@
+[
+  {
+    "dia": "dom",
+    "montante": 17.45
+  },
+  {
+    "dia": "seg",
+    "montante": 34.91
+  },
+  {
+    "dia": "ter",
+    "montante": 52.36
+  },
+  {
+    "dia": "qua",
+    "montante": 31.07
+  },
+  {
+    "dia": "qui",
+    "montante": 23.39
+  },
+  {
+    "dia": "sex",
+    "montante": 43.28
+  },
+  {
+    "dia": "sab",
+    "montante": 25.48
+  }
+]

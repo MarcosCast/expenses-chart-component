@@ -7,7 +7,6 @@
    <!--<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">-->
    <link rel="stylesheet" href="style.css" />
   
-   <!--<title>Frontend Mentor | Expenses chart component</title>-->
 
    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
    <!--<style>
@@ -16,13 +15,49 @@
    </style>-->
  </head>
        <body>
-          <div class="interface">
-            <div class="topo">
-              Meu Saldo
-               R$ 921.48
-            </div>
+        <div class="topo">
+          Meu Saldo
+           R$ 921.48
+        </div>
+        <div id="chart"></div>
+         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+         <script type="text/javascript">
+          google.charts.load('current', { packages: [ 'corechart' ] })
+          google.charts.setOnLoadCallback(drawChart)
+
+          function drawChart(){
+            const container = document.querySelector('#chart')
+            const data = new google.visualization.arrayToDataTable([
+                [ 'Dia', 'Valor' ],
+                [ 'Dom', 17.45 ],
+                [ 'Seg', 34.91 ],
+                [ 'Ter', 52.36 ],
+                [ 'Qua', 31.07 ],
+                [ 'Qui', 23.39 ],
+                [ 'Sex', 43.28 ],
+                [ 'Sab', 25.48 ]
+            ])
+            const options = {
+                title: 'Gastos dos últimos 7 dias',
+                height: 300,
+                width: 450
+            }
+
+            const chart = new google.visualization.ColumnChart(container)
+            // const chart = new google.visualization.BarChart(container)
+            // const chart = new google.visualization.LineChart(container)
+            // const chart = new google.visualization.PieChart(container)
+            chart.draw(data, options)
+        }
+
+          
+          </script>
+        </body>
+</html>
+         <div class="interface">
+            
              </br>
-               Gastos dos últimos 7 dias
+             <!--  Gastos dos últimos 7 dias
              </br>
                Dom
                Seg
@@ -31,7 +66,7 @@
                Qui
                Sex
                Sab
-             </br>
+             </br>-->
                 Total deste mês
                 R$478.33
               </br>
@@ -43,8 +78,7 @@
 
         
 
-       
-  
+     
   <div class="atribuicao">
     Coded by <a href="#">Marcos Castro</a>.
   </div>
