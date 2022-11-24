@@ -4,14 +4,19 @@ html {
 }
 
 body {
-    width: 450px;
-    height: 550px;
+    width: 400px;
+    height: 500px;
     margin: 0 auto;
     background-color: #00bfff;
     padding: 20px;
     /*webkit-border-radius: 20px;*/
     border-radius: 20px; 
     border: 5px outset  #6799ac;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .interface {
@@ -29,6 +34,7 @@ body {
 }
 
 .atribuicao {
+    display: flex;
     align-items: flex-end;
     justify-content: center;
 }
@@ -44,16 +50,18 @@ body {
     /*vertical-align: middle;*/
     justify-content: center;
     /*display: table-cell;*/
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .left {
+    display: inline;
     text-align: left;
     align-items: left;
     justify-content: left;
-
 }
 
 .right {
+    display: flex;
     text-align: right;
     align-items: right;
     justify-content: right;
