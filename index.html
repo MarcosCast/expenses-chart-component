@@ -25,6 +25,7 @@
           google.charts.load('current', { packages: [ 'corechart' ] })
           google.charts.setOnLoadCallback(drawChart)
 
+          
           function drawChart(){
             const container = document.querySelector('#chart')
             const data = new google.visualization.arrayToDataTable([
@@ -39,8 +40,11 @@
             ])
             const options = {
                 title: 'Gastos dos últimos 7 dias',
-                height: 300,
-                width: 450
+                height: 250,
+                width: 400,
+                backgroundColor:'#add8e6',
+                hoverBorderRadius: 10,
+                hoverBorderColor: '#fff',
             }
 
             const chart = new google.visualization.ColumnChart(container)
@@ -67,11 +71,14 @@
                Sex
                Sab
              </br>-->
-                Total deste mês
+             <div class="left">
+              Total deste mês
                 R$478.33
+             </div>
+             <div class="right">
+              +2.4%
+              do mês passado</div>
               </br>
-                +2.4%
-                do mês passado
               </br>
 
           </div>

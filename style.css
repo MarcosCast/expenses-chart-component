@@ -1,5 +1,6 @@
 html {
-    background-color: #87cefa;
+    background-color: #add8e6;
+    padding: 40px 40px 40px 40px;
 }
 
 body {
@@ -7,20 +8,16 @@ body {
     height: 550px;
     margin: 0 auto;
     background-color: #00bfff;
-    padding: 0 20px 20px 20px;
-    border: 10px inset grey;
+    padding: 20px;
+    /*webkit-border-radius: 20px;*/
+    border-radius: 20px; 
+    border: 5px outset  #6799ac;
 }
 
-/*.corpo {
-    background-color: #000;
-    display: flex;
-    padding: 15px;
-}*/
-
 .interface {
-    background-color: #6959CD;
-    width: 350px;
-    height: 150px;
+    background-color: #add8e6;
+    width: 400px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,11 +30,32 @@ body {
 
 .atribuicao {
     align-items: flex-end;
+    justify-content: center;
 }
 
 .topo {
+    width: 400px;
+    height: 100px;
     background-color: #87cefa;
-    border-style: inset 2px #000;
-    display: inline-block;
+    border-radius: 5px;
+    border-style: inset 5px #000;
+    display: flex;
+    align-items: center;
+    /*vertical-align: middle;*/
+    justify-content: center;
+    /*display: table-cell;*/
 }
 
+.left {
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+
+}
+
+.right {
+    text-align: right;
+    align-items: right;
+    justify-content: right;
+
+}
