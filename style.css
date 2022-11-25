@@ -14,7 +14,7 @@ body {
     border: 5px outset  #6799ac;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -51,19 +51,25 @@ body {
     justify-content:space-around;
     border-top: #fff;
     border-style:groove;
+    padding-top: 20px;
+    text-align: center;
 }
 .left {
-    display: inline;
+    width: 200px;
+    height: 100px;
     text-align:start;
     align-items:flex-start;
     justify-content:first baseline;
+    margin-left: 30px;
 }
 
 .right {
-    display: flex;
+    width: 200px;
+    height: 100px;
     text-align:end;
     align-items: flex-end;
     justify-content:last baseline;
+    margin-right: 30px;
 
 }
 
