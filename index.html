@@ -17,6 +17,7 @@
        <body>
         <div class="topo">
           Meu Saldo
+          <br>
            R$ 921.48
         </div>
         <div id="chart"></div>
@@ -48,9 +49,6 @@
             }
 
             const chart = new google.visualization.ColumnChart(container)
-            // const chart = new google.visualization.BarChart(container)
-            // const chart = new google.visualization.LineChart(container)
-            // const chart = new google.visualization.PieChart(container)
             chart.draw(data, options)
         }
 
@@ -64,7 +62,8 @@
               Total deste mês
              </div>
              <div class="right">
-              <h6>+2.4%</h6></br>
+              <h5>+2.4%</h5>
+              </br>
               do mês passado</div>
               
               

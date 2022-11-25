@@ -1,5 +1,5 @@
 html {
-    background-color: #add8e6;
+    background-color: #000;
     padding: 40px 40px 40px 40px;
 }
 
@@ -7,7 +7,7 @@ body {
     width: 400px;
     height: 500px;
     margin: 0 auto;
-    background-color: #00bfff;
+    background-color: #87cefa;
     padding: 20px;
     /*webkit-border-radius: 20px;*/
     border-radius: 20px; 
@@ -19,51 +19,56 @@ body {
 
 }
 
-.interface {
-    background-color: #add8e6;
-    width: 400px;
+.topo {
+    width: 380px;
     height: 100px;
+    padding-left: 20px;
+    background-color: #00bfff;
+    border: #6799ac;
+    border-radius: 5px;
+    border-style: inset 5px #6799ac;
     display: flex;
+    align-items: center;
+    /*vertical-align: middle;*/
+    justify-content:first baseline;
+    /*display: table-cell;*/
+    font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+#chart {
     justify-content: center;
     align-items: center;
 }
 
-.drawChart {
-    justify-content: center;
-    align-items: center;
+.interface {
+    background-color: #add8e6;
+    width: 400px;
+    display: flex;
+    justify-content:space-around;
+    border-top: #fff;
+    border-style:groove;
+}
+.left {
+    display: inline;
+    text-align:start;
+    align-items:flex-start;
+    justify-content:first baseline;
+}
+
+.right {
+    display: flex;
+    text-align:end;
+    align-items: flex-end;
+    justify-content:last baseline;
+
 }
 
 .atribuicao {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-}
-
-.topo {
-    width: 400px;
-    height: 100px;
-    background-color: #87cefa;
-    border-radius: 5px;
-    border-style: inset 5px #000;
-    display: flex;
-    align-items: center;
-    /*vertical-align: middle;*/
-    justify-content: center;
-    /*display: table-cell;*/
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.left {
-    display: inline;
-    text-align: left;
-    align-items: left;
-    justify-content: left;
-}
-
-.right {
-    display: flex;
-    text-align: right;
-    align-items: right;
-    justify-content: right;
-
 }
