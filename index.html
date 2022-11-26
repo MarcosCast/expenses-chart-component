@@ -2,23 +2,18 @@
 <html lang="pt-br">
  <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <title>Gráfico</title>
-   <!--<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">-->
+   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
    <link rel="stylesheet" href="style.css" />
-  
 
-   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-   <!--<style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-   </style>-->
  </head>
        <body>
         <div class="topo">
+         <img src="images/logo.svg">
           Meu Saldo
           <br>
-           R$ 921.48
+           R$ 921.48  
         </div>
         <div id="chart"></div>
          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -44,47 +39,25 @@
                 height: 250,
                 width: 400,
                 backgroundColor:'#add8e6',
-                hoverBorderRadius: 10,
-                hoverBorderColor: '#fff',
+                //borderRadius: 50,
+                //hoverBorderColor: '#fff',
             }
 
             const chart = new google.visualization.ColumnChart(container)
             chart.draw(data, options)
         }
-
           
           </script>
-        </body>
-</html>
-         <div class="interface">
-             <div class="left">
-              Total deste mês
-              </br>
-               <h2>R$478.33</h2>
-             </div>
-             <div class="right">
-              <h4>+2.4%</h4>
-              </br>
-              do mês passado</div>
-              
-              
-
-          </div>
-         <!-- <div class="left">
-            <h1>R$478.33</h1>
-            Total deste mês
-           </div>
-           <div class="right">
-            +2.4%
-            do mês passado</div>
-            </br>
-            </br>-->
-
         
-
-     
+             <div class="base">
+              Total de gastos da semana:
+              <font color="red"><h2>R$227.94</h2></font>
+               <b>+2.4%</b> <br>
+              que a semana passada</div>
+      </body>
+    
   <div class="atribuicao">
-    Coded by: <a href="#"> Marcos Castro</a>.
+    Coded by: <a href="https://www.linkedin.com/in/marcos--castro/"> Marcos Castro</a>.
   </div>
 </body>
 </html>

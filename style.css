@@ -1,75 +1,60 @@
 html {
-    background-color: #000;
+    background-image: url(images/finance.jpg);
+    background-repeat: no-repeat;
     padding: 40px 40px 40px 40px;
 }
 
 body {
     width: 400px;
-    height: 500px;
+    height: 550px;
     margin: 0 auto;
     background-color: #87cefa;
     padding: 20px;
     /*webkit-border-radius: 20px;*/
     border-radius: 20px; 
     border: 5px outset  #6799ac;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .topo {
-    width: 380px;
+    width: 400px;
     height: 100px;
-    padding-left: 20px;
+    padding-left: 0px 20px 20px 20px;
     background-color: #00bfff;
     border: #6799ac;
-    border-radius: 5px;
+    border-radius: 15px;
     border-style: inset 5px #6799ac;
     display: flex;
     align-items: center;
     /*vertical-align: middle;*/
-    justify-content:first baseline;
+    justify-content:space-around;
     /*display: table-cell;*/
-    font-style: italic;
+    font-style: initial;
 	font-weight: bold;
 	font-size: 18px;
-	font-family: arial, sans-serif;
+	font-family: Verdana;
     margin-bottom: 20px;
 }
 
-#chart {
-    justify-content: center;
-    align-items: center;
-}
-
-.interface {
+.base {
     background-color: #add8e6;
-    width: 400px;
-    display: flex;
-    justify-content:space-around;
-    border-top: #fff;
-    border-style:groove;
-    padding-top: 20px;
-    text-align: center;
-}
-.left {
-    width: 200px;
-    height: 100px;
+    width: 380px;
+    height: 120px;;
+    display: block;
     text-align:start;
     align-items:flex-start;
-    justify-content:first baseline;
-    margin-left: 30px;
-}
-
-.right {
-    width: 200px;
-    height: 100px;
-    text-align:end;
-    align-items: flex-end;
-    justify-content:last baseline;
-    margin-right: 30px;
+    justify-content:left;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-family: Verdana;
+    font-size: smaller;
+    border-top: solid grey 2px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 
 }
 
@@ -77,4 +62,6 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    font-size: 11px;
+    color: hsl(228, 45%, 44%);   
 }
