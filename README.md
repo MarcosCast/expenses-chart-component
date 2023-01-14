@@ -24,7 +24,7 @@ Apresentação do projeto em vídeo: em breve!
 
 ## 🚀 Deploy
 
-
+https://marcoscast.github.io/expenses-chart-component/
 
 ## 👨‍💻 Área do Desenvolvedor
 
